@@ -14,6 +14,21 @@
             "remoteRoot": "/var/task",
             "protocol": "inspector",
             "stopOnEntry": false
+        },
+        {
+            "name": "hello",
+            "type": "pwa-node",
+            "request": "attach",
+            "address": "localhost",
+            "port": 9999,
+            "localRoot": "${workspaceFolder}/.aws-sam/build/helloWorldFunction",
+            "sourceMaps": true,
+            "remoteRoot": "/var/task",
+            "protocol": "inspector",
+            "stopOnEntry": false,
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
         }
     ]
 }

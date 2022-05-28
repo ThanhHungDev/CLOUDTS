@@ -1,0 +1,7 @@
+for windows developer, if you want to run: 
+
+>sam local generate-event apigateway aws-proxy | pbcopy
+
+ , you need to replace "pbcopy" with "clip". so you command change to :
+
+>sam local generate-event apigateway aws-proxy | clip
